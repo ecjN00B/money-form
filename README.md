@@ -1,12 +1,13 @@
 # Watson Base Service
 
-API base para servi√ßos que utilizam Watson Assistant.
+API base para serviáos que utilizam Watson Assistant.
 
 ## Getting Started
 
 ### Prerequisites
 
 Before you can run the application, make sure that you have the following software installed:
+
 * [NPM](https://www.npmjs.com/get-npm)
 * Run `npm install`
 
