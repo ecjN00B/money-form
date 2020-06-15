@@ -1,6 +1,6 @@
 # Watson Base Service
 
-API base para servi‡os que utilizam Watson Assistant.
+API base para serviï¿½os que utilizam Watson Assistant.
 
 ## Getting Started
 
@@ -13,6 +13,13 @@ Before you can run the application, make sure that you have the following softwa
 
 And add in your root folder .env file. ([See template](docs/.env.example))
 
+
+## To Do
+
+- [ ] Banco de dados MongoDB no Cliente
+- [ ] Watson Assistant no Cliente
+- [ ] API no Cliente
+- [ ] Front no Cliente
 
 ## Contributing
 
