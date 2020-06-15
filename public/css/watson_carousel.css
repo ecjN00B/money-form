@@ -1,0 +1,282 @@
+#chat-digitaly-watson .carousel {
+    position: relative;
+    width: calc(100% - 60px);
+    background: #FFF !important;
+    max-height: 280px;
+}
+
+#chat-digitaly-watson .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-height: 280px;
+}
+
+#chat-digitaly-watson .item {
+    width: 100%;
+    position: relative;
+    -webkit-transition: .6s ease-in-out left;
+    -o-transition: .6s ease-in-out left;
+    transition: .6s ease-in-out left;
+    display: inline-flex;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#chat-digitaly-watson .item > a > img,
+#chat-digitaly-watson .item > img {
+    height: 100% !important;
+    width: auto;
+    line-height: 1;
+    max-height: 250px;
+    min-height: 230px;
+    opacity: 0;
+}
+
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+    #chat-digitaly-watson .item {
+        -webkit-transition: -webkit-transform .6s ease-in-out;
+        -o-transition: -o-transform .6s ease-in-out;
+        transition: transform .6s ease-in-out;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-perspective: 1000px;
+        perspective: 1000px
+    }
+
+    #chat-digitaly-watson .item.active.right,
+    #chat-digitaly-watson .item.next {
+        left: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+
+    #chat-digitaly-watson .item.active.left,
+    #chat-digitaly-watson .item.prev {
+        left: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0)
+    }
+
+    #chat-digitaly-watson .item.active,
+    #chat-digitaly-watson .item.next.left,
+    #chat-digitaly-watson .item.prev.right {
+        left: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+#chat-digitaly-watson .active,
+#chat-digitaly-watson .next,
+#chat-digitaly-watson .prev {
+    display: block
+}
+
+#chat-digitaly-watson .active {
+    left: 0
+}
+
+#chat-digitaly-watson #chat-digitaly-watson .next,
+#chat-digitaly-watson .prev {
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+#chat-digitaly-watson .next {
+    left: 100%
+}
+
+#chat-digitaly-watson .prev {
+    left: -100%
+}
+
+#chat-digitaly-watson .next.left,
+#chat-digitaly-watson .prev.right {
+    left: 0
+}
+
+#chat-digitaly-watson .active.left {
+    left: -100%
+}
+
+#chat-digitaly-watson .active.right {
+    left: 100%
+}
+
+#chat-digitaly-watson .carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff !important;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 0);
+    filter: alpha(opacity=50);
+    opacity: .7;
+    z-index: 1;
+}
+
+#chat-digitaly-watson .carousel-control.left {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x
+}
+
+#chat-digitaly-watson .carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x
+}
+
+#chat-digitaly-watson .carousel-control:focus,
+#chat-digitaly-watson .carousel-control:hover {
+    color: #fff;
+    text-decoration: none;
+    filter: alpha(opacity=90);
+    outline: 0;
+    opacity: .9
+}
+
+#chat-digitaly-watson .carousel-control .glyphicon-chevron-left,
+#chat-digitaly-watson .carousel-control .glyphicon-chevron-right,
+#chat-digitaly-watson .carousel-control .icon-next,
+#chat-digitaly-watson .carousel-control .icon-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+#chat-digitaly-watson .carousel-control .glyphicon-chevron-left {
+    left: 0;
+}
+
+#chat-digitaly-watson .carousel-control .glyphicon-chevron-right {
+    right: 0;
+}
+
+
+#chat-digitaly-watson .carousel-control.slick-disabled {
+    opacity: .2 !important;
+}
+
+#chat-digitaly-watson .carousel-control .glyphicon i {
+    font-size: 40px;
+    color: #FFF !important;
+}
+
+#chat-digitaly-watson .carousel-caption {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 20px);
+    height: auto;
+    bottom: -1px;
+    left: 0 !important;
+    z-index: 10;
+    color: #000;
+    margin: 0;
+    text-align: center;
+    background: #fff;
+    opacity: .8;
+    border-radius: 0;
+    min-height: 55px;
+    padding: 10px 10px 30px;
+}
+
+#chat-digitaly-watson .carousel-caption h4 {
+    padding: 0 5px;
+    font-size: 14px;
+    color: #2b2b2b;
+    margin: 0;
+}
+
+#chat-digitaly-watson .carousel-caption p {
+    font-size: 13px;
+    color: #2b2b2b;
+    margin: 0;
+}
+
+#chat-digitaly-watson .carousel-caption a:hover,
+#chat-digitaly-watson .carousel-caption a:active,
+#chat-digitaly-watson .carousel-caption a {
+    color: #003554 !important;
+}
+
+#chat-digitaly-watson .item > a > img,
+#chat-digitaly-watson .item > img,
+#chat-digitaly-watson .img-responsive,
+#chat-digitaly-watson .thumbnail a > img,
+#chat-digitaly-watson .thumbnail > img {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+
+.slick-dots {
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+.slick-dots li {
+    display: inline-block;
+    width: 15px;
+    transition: all ease-in-out .2s;
+    overflow: hidden;
+}
+
+.slick-dots li.hide-slick-dot {
+    width: 0;
+}
+
+.slick-dots li button {
+    background: #fff;
+    border: 1px solid #696969;
+    text-indent: -999999px;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0 2px;
+    opacity: 0.7;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.slick-dots li button:hover {
+    background: #e2e2e2;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.slick-dots li.slick-active button {
+    background: #cfcfcf;
+    box-shadow: none;
+}
+
+.slick-dots li button:focus {
+    outline: none;
+}

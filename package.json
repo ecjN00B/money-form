@@ -1,0 +1,25 @@
+{
+  "name": "watson-base-service",
+  "version": "1.0.0",
+  "description": "Projeto base para criação de chatbots",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "uglifycss public/css/watson.css > public/css/watson.min.css && uglifycss public/css/watson_carousel.css > public/css/watson_carousel.min.css && terser --compress --mangle -- public/js/iframe.js > public/js/iframe.min.js && terser --compress --mangle -- public/js/watson.js > public/js/watson.min.js",
+    "start": "pm2 startOrReload ecosystem.config.js --only dev-nome-cliente"
+  },
+  "author": "ecjN00B",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.5",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "ibm-watson": "^5.5.0",
+    "mongodb": "^3.5.7",
+    "request": "^2.88.2",
+    "socket.io": "^2.3.0",
+    "terser": "^4.7.0",
+    "uglifycss": "0.0.29"
+  }
+}

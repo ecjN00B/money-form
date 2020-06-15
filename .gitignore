@@ -1,0 +1,6 @@
+/node_modules
+.env
+public/js/iframe.min.js
+public/js/watson.min.js
+public/css/watson.min.css
+public/css/watson_carousel.min.css
