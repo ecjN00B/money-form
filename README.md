@@ -1,17 +1,25 @@
 # Watson Base Service
 
-API base para serviços que utilizam Watson Assistant.
+API base para servi�os que utilizam Watson Assistant.
 
 ## Getting Started
 
 ### Prerequisites
 
 Before you can run the application, make sure that you have the following software installed:
+
 * [NPM](https://www.npmjs.com/get-npm)
 * Run `npm install`
 
 And add in your root folder .env file. ([See template](docs/.env.example))
 
+
+## To Do
+
+- [ ] Banco de dados MongoDB no Cliente
+- [ ] Watson Assistant no Cliente
+- [ ] API no Cliente
+- [ ] Front no Cliente
 
 ## Contributing
 
