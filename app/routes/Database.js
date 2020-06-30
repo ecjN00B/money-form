@@ -10,18 +10,18 @@ exports.saveDialog = (req, res, next) => {
         convId: '',
         dialog: null
     }
-    if (req.body.conversation_id) {
-        newDoc["convId"] = req.body.conversation_id;
+    if (req.body.sessionId) {
+        newDoc["convId"] = req.body.sessionId;
         newDoc["dialog"] = req.body.dialog;
 
         global.db.insertUpdateMsgDialogs(newDoc, (err, result) => {
             if (err) res.status(500).json(err);
-            else res.json({
+            else res.status(200).json({
                 message: 'Dialog cadastrado com sucesso!'
             })
         })
     } else {
-        res.json({
+        res.status(400).json({
             message: 'DialogObject Inválido'
         })
     }

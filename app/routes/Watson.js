@@ -27,6 +27,7 @@ exports.message = async (req, res) => {
         } else {
             response.sessionId = req.body.sessionId;
         }
+        response.input = payload.input.text;
         return res.json(response);
     });
 }
