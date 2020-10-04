@@ -2,9 +2,9 @@ if (typeof jQuery !== 'undefined') {
     (function ($) {
         const ENABLE = true;
 
-        const SRC_IFRAME_LOCAL = 'http://localhost:3001';
-        const SRC_IFRAME_DEV = 'https://dev-nome-cliente.link';
-        const SRC_IFRAME_HOMOLOG = 'https://nome-cliente.link';
+        const SRC_IFRAME_LOCAL = 'http://localhost:80';
+        const SRC_IFRAME_DEV = 'http://ec2-100-26-132-50.compute-1.amazonaws.com';
+        const SRC_IFRAME_HOMOLOG = 'http://ec2-100-26-132-50.compute-1.amazonaws.com';
         const SRC_IFRAME_PROD = SRC_IFRAME_HOMOLOG;
 
         const SRC_IFRAME = getHostAndHttpScheme() + '/index?origin=' + window.location.href + '&room=' + createRoom();
@@ -167,7 +167,7 @@ if (typeof jQuery !== 'undefined') {
                 return;
             }
 
-            watsonChat.preLoadImage(getHostAndHttpScheme() + '/img/cliente_avatar.png');
+            watsonChat.preLoadImage(getHostAndHttpScheme() + '/img/berith.png');
 
             watsonChat.create(function () {
                 watsonChat.socket(function () {

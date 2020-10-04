@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "minify": "uglifycss public/css/watson.css > public/css/watson.min.css && uglifycss public/css/watson_carousel.css > public/css/watson_carousel.min.css && terser --compress --mangle -- public/js/iframe.js > public/js/iframe.min.js && terser --compress --mangle -- public/js/watson.js > public/js/watson.min.js",
-    "start": "pm2 startOrReload ecosystem.config.js --only dev-nome-cliente"
+    "start": "pm2 startOrReload ecosystem.config.js --only dev-nasa"
   },
   "author": "ecjN00B",
   "license": "MIT",

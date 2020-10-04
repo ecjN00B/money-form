@@ -16,7 +16,7 @@ pipelines:
                 SSH_USER: 'ubuntu'
                 SERVER: 'IP'
                 MODE: 'command'
-                COMMAND: 'cd /var/www/dev-nome-cliente && /bin/bash deploy.sh dev'
+                COMMAND: 'cd /var/www/dev-nasa && /bin/bash deploy.sh dev'
     master:
       - step:
           script:
@@ -25,4 +25,4 @@ pipelines:
                 SSH_USER: 'ubuntu'
                 SERVER: 'IP'
                 MODE: 'command'
-                COMMAND: 'cd /var/www/nome-cliente && /bin/bash deploy.sh prod'
+                COMMAND: 'cd /var/www/nasa && /bin/bash deploy.sh prod'
