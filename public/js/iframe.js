@@ -167,7 +167,7 @@ if (typeof jQuery !== 'undefined') {
                 return;
             }
 
-            watsonChat.preLoadImage(getHostAndHttpScheme() + '/img/berith.png');
+            watsonChat.preLoadImage(getHostAndHttpScheme() + '/img/cliente_avatar.png');
 
             watsonChat.create(function () {
                 watsonChat.socket(function () {

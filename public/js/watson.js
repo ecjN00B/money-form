@@ -132,8 +132,8 @@ function createHtml(callback) {
     html += "<a class=\"delete-chat\" href=\"#\"><i class=\"material-icons icn-delete-chat\">delete</i></a>";
     html += "</div>";
     html += "<div class=\"chat-clerk\">";
-    html += "<h1>Berith</h1>";
-    html += "<figure class=\"avatar\"><img src=\"" + HOST + "/img/berith.png\"/></figure>";
+    html += "<h1>Sintonia Corretora</h1>";
+    html += "<figure class=\"avatar\"><img src=\"" + HOST + "/img/cliente_avatar.png\"/></figure>";
     html += "</div>";
     html += "<div class=\"messages\"><div class=\"messages-content\"></div></div>";
     html += "<form id=\"myForm\" class=\"message-box\">";
@@ -199,7 +199,7 @@ function insertMessageStorage(savedSession) {
             if (msg.bot !== undefined) {
                 if (msg.bot.response_type === "text" && msg.bot.text !== "carousel") {
                     setTimeout(function () {
-                        $('.messages').append('<div class="message new" id="' + msg.bot.id + '"><figure class="avatar"><img src="' + HOST + '/img/berith.png" /></figure>' + msg.bot.text + '</div>');
+                        $('.messages').append('<div class="message new" id="' + msg.bot.id + '"><figure class="avatar"><img src="' + HOST + '/img/cliente_avatar.png" /></figure>' + msg.bot.text + '</div>');
                     }, time);
                 }
                 if (msg.bot.response_type === "image") {
@@ -297,7 +297,7 @@ function saveDialog(watsonObjResp) {
 
 function loadMessage() {
     if ($('.message.loading').length === 0) {
-        $('.messages').append('<div class="message loading new"><figure class="avatar"><img src="' + HOST + '/img/berith.png" /></figure><span></span></div>');
+        $('.messages').append('<div class="message loading new"><figure class="avatar"><img src="' + HOST + '/img/cliente_avatar.png" /></figure><span></span></div>');
         updateScroll();
     }
 }
@@ -338,7 +338,7 @@ function watsonText(res) {
                 if (item.response_type === "text" && carouselImages === null) {
                     setTimeout(function () {
                         $('.message.loading').remove();
-                        $('.messages').append('<div class="message new" id="' + item.id + '"><figure class="avatar"> <img src="' + HOST + '/img/berith.png" /></figure>' + item.text + '</div>');
+                        $('.messages').append('<div class="message new" id="' + item.id + '"><figure class="avatar"> <img src="' + HOST + '/img/cliente_avatar.png" /></figure>' + item.text + '</div>');
                         $("#id").val(res.sessionId);
                         dialog_texts.push({
                             bot: item
