@@ -62,11 +62,21 @@
     });
 
     function submitForm(option) {
+        const name = $('#name').val();
+        const mail = $('#email').val();
+        if(name === "" || mail === "") {
+            alert("Preencha os campos");
+            return;
+        }
+        if(mail.trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+            alert("Email invalido");
+            return;
+        }
         const body = {
             formId: "1",
             answer: {
-                name: $('#name').val(),
-                email: $('#email').val(),
+                name: name,
+                email: mail,
                 answers: [option]
             }
         }
