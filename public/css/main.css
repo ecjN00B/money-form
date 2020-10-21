@@ -1,3 +1,15 @@
+.voto {
+  color: white;
+  text-align: center;
+  align-self: center;
+}
+
+.digitaly {
+  text-align: center;
+  width: 100%;
+  text-transform: none;
+}
+
 .Bitmap {
   width: 259px;
   height: 58.5px;
@@ -373,7 +385,7 @@ iframe {
   background: transparent;
   font-family: Poppins-Regular;
   font-size: 18px;
-  color: #666666;
+  color: #f0f0f0;
   line-height: 1.2;
   padding: 0 25px;
 }
@@ -440,7 +452,7 @@ textarea.input100 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 23px;
+  /* padding-top: 23px; */
 }
 
 .contact100-form-btn {
@@ -451,7 +463,7 @@ textarea.input100 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   min-width: 200px;
   height: 50px;
   border-radius: 2px;
@@ -473,10 +485,15 @@ textarea.input100 {
   margin-left: 1vw;
 }
 
-.contact100-form-btn:hover {
-  background: #333333;
+#btn-sim:hover {
+  background: #05a308;
+  color: #fff;
 }
 
+#btn-nao:hover {
+  background: #c80000;
+  color: #fff;
+}
 
 
 /*------------------------------------------------------------------

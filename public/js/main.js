@@ -73,6 +73,15 @@
         $.post("/db/form/answer", body)
         .done((response) => {
             console.log(response);
+            $("#form").html(`
+            <a href="https://digitaly.tech" target="_blank">
+                <div class="voto">
+                    <h1>Voto computado com sucesso!</h1>
+                    <br><br>
+                    <image src="./images/digi.png" style="height: 65%; margin-right: -3px;"></image>
+                </div>
+            </a>
+            `)
         })
     }
     
