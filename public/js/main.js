@@ -74,7 +74,7 @@
         .done((response) => {
             console.log(response);
             $("#form").html(`
-            <a href="https://digitaly.tech" target="_blank">
+            <a href="https://digitaly.tech" target="_blank" style="align-self: center;">
                 <div class="voto">
                     <h1>Voto computado com sucesso!</h1>
                     <br><br>
