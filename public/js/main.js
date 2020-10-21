@@ -1,10 +1,6 @@
 
 (function ($) {
     "use strict";
-
-
-
-  
   
     /*==================================================================
     [ Validate ]*/
@@ -53,6 +49,31 @@
         var thisAlert = $(input).parent();
 
         $(thisAlert).removeClass('alert-validate');
+    }
+
+    $("#btn-sim").click((e) => {
+        e.preventDefault();
+        submitForm("Sim");
+    });
+
+    $("#btn-nao").click((e) => {
+        e.preventDefault();
+        submitForm("Não");
+    });
+
+    function submitForm(option) {
+        const body = {
+            formId: "1",
+            answer: {
+                name: $('#name').val(),
+                email: $('#email').val(),
+                answers: [option]
+            }
+        }
+        $.post("/db/form/answer", body)
+        .done((response) => {
+            console.log(response);
+        })
     }
     
 

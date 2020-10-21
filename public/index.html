@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Contact V17</title>
+	<title>Enquete - Money Report</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -15,7 +15,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
@@ -33,6 +33,7 @@
 	<div class="container-contact100">
 		<div class="wrap-contact100">
 			<div class="contact100-more flex-col-c-m" style="background-image: url('images/fundo_money.png');">
+				<img src="images/digitaly.png" class="Bitmap">	
 				<img src="images/money_logo.png" class="Bitmap">	
 				<img src="images/monica_logo.png" class="Group">
 				<p class="Ol-sou-a-Monica"> Olá, sou a Mônica! </p>	
@@ -40,14 +41,17 @@
 					Tudo bem? </br>
 					Gostaria de lhe fazer </br>
 					algumas perguntas.</p>	
+					<a href="#form">
+						<img src="images/arrow_blue.png" class="Bitmap">	
+					</a>
 			</div>
-			<form class="contact100-form validate-form" style="background-image: url('images/form-background.png');">
+			<form class="contact100-form validate-form" id="form" style="background-image: url('images/form-background.png');">
 				<div class="container-title">
 					<span class="contact100-form-title">
 						Enquete
 					</span>
 					<br><br>
-					<span class="contact100-form-subtitle">
+					<span class="contact100-form-subtitle" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
 						20 de outubro de 2020
 					</span>
 				</div>
@@ -68,15 +72,14 @@
 					Na sua opinião, já é hora de voltarmos com as reuniões e eventos presenciais?
 				</span>
 				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
+					<button type="button" class="contact100-form-btn" id="btn-sim">
 						Sim
 					</button>
-					<button class="contact100-form-btn">
+					<button type="button" class="contact100-form-btn" id="btn-nao">
 						Não
 					</button>
 				</div>
 			</form>
-
 			
 		</div>
 	</div>

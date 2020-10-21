@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
         {
-            name: "nasa",
+            name: "money-form",
             script: "./server.js",
             env: {
                 "PORT": 443,
@@ -11,7 +11,7 @@ module.exports = {
             }
         },
         {
-            name: "dev-nasa",
+            name: "dev-money-form",
             script: "./server.js",
             env: {
                 "PORT": 80,

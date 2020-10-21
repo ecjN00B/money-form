@@ -1,11 +1,11 @@
 {
-  "name": "watson-base-service",
+  "name": "money-form",
   "version": "1.0.0",
-  "description": "Projeto base para criação de chatbots",
+  "description": "Projeto de formulario da money",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "pm2 startOrReload ecosystem.config.js --only dev-money-form"
   },
   "author": "ecjN00B",
   "license": "MIT",
@@ -17,6 +17,8 @@
     "ibm-watson": "^5.5.0",
     "mongodb": "^3.5.7",
     "request": "^2.88.2",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.3.0",
+    "terser": "^4.7.0",
+    "uglifycss": "0.0.29"
   }
 }
