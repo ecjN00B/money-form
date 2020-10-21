@@ -8,26 +8,26 @@ mongoClient.connect(config.mongodb.uri, {
     .then(conn => global.conn = conn.db(config.mongodb.db))
     .catch(err => console.log(err));
 
-exports.insertUpdateMsgDialogs = (dialogObj, callback) => {
-    global.conn.collection(config.mongodb.dialogs_collection).update({
-        conversation_id: dialogObj.convId
+exports.saveAnswer = (id, answerObj, callback) => {
+    global.conn.collection(config.mongodb.form_collection).update({
+        form_id: id
     }, {
-        $push: { dialogs: dialogObj.dialog }
-    }, {
-        upsert: true
-    }, callback);
-}
-
-exports.insertUpdateWelcomeNode = (id, welcomeObj, callback) => {
-    global.conn.collection(config.mongodb.welcome_collection).update({
-        welcome_id: id
-    }, {
-        $set: { welcome: welcomeObj }
+        $push: { answers: answerObj }
     }, {
         upsert: true
     }, callback);
 }
 
-exports.getWelcomeNode = (callback) => {
-    global.conn.collection(config.mongodb.welcome_collection).find({}).toArray(callback)
+exports.insertUpdateForm = (id, formObj, callback) => {
+    global.conn.collection(config.mongodb.form_collection).update({
+        form_id: id
+    }, {
+        $set: { form: formObj }
+    }, {
+        upsert: true
+    }, callback);
+}
+
+exports.getForm = (callback) => {
+    global.conn.collection(config.mongodb.form_collection).find({}).toArray(callback)
 }

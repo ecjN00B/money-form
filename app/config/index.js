@@ -13,8 +13,7 @@ config.assistant = {
 config.mongodb = {
     uri: process.env.MONGODB_URI || pm2Config["MONGODB_URI"],
     db: process.env.MONGODB_DB || pm2Config["MONGODB_DB"],
-    dialogs_collection: process.env.MONGODB_DIALOGS_COLLECTION || pm2Config["MONGODB_DIALOGS_COLLECTION"],
-    welcome_collection: process.env.MONGODB_WELCOME_COLLECTION || pm2Config["MONGODB_WELCOME_COLLECTION"]
+    form_collection: process.env.MONGODB_FORM_COLLECTION || pm2Config["MONGODB_FORM_COLLECTION"]
 };
 
 module.exports = config;
