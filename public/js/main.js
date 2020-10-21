@@ -61,6 +61,25 @@
         submitForm("Não");
     });
 
+    $(document).ready(() => {
+        const meses = [
+            "Janeiro",
+            "Fevereiro",
+            "Março",
+            "Abril",
+            "Maio",
+            "Junho",
+            "Julho",
+            "Agosto",
+            "Setembro",
+            "Outubro",
+            "Novembro",
+            "Dezembro"
+        ];
+        let date = new Date();
+        $("#data").html(`${date.getDate()} de ${meses[date.getMonth()]} de ${date.getFullYear()}`);
+    });
+
     function submitForm(option) {
         const name = $('#name').val();
         const mail = $('#email').val();
