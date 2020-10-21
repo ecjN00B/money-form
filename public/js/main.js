@@ -78,6 +78,7 @@
         ];
         let date = new Date();
         $("#data").html(`${date.getDate()} de ${meses[date.getMonth()]} de ${date.getFullYear()}`);
+        document.getElementById("monica").scrollIntoView();
     });
 
     function submitForm(option) {
@@ -96,7 +97,8 @@
             answer: {
                 name: name,
                 email: mail,
-                answers: [option]
+                answers: [option],
+                date: new Date()
             }
         }
         $.post("/db/form/answer", body)
