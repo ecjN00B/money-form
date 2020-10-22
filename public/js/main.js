@@ -82,38 +82,47 @@
     });
 
     function submitForm(option) {
-        const name = $('#name').val();
-        const mail = $('#email').val();
-        if(name === "" || mail === "") {
-            alert("Preencha os campos");
-            return;
-        }
-        if(mail.trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
-            alert("Email invalido");
-            return;
-        }
-        const body = {
-            formId: "1",
-            answer: {
-                name: name,
-                email: mail,
-                answers: [option],
-                date: new Date()
-            }
-        }
-        $.post("/db/form/answer", body)
-        .done((response) => {
-            console.log(response);
-            $("#form").html(`
-            <a href="https://digitaly.tech" target="_blank" style="align-self: center;">
+        $("#form").html(`
+            <a href="https://digitaly.tech" target="_blank" style="align-self: center; width: 100%; text-decoration: none;">
                 <div class="voto">
                     <h1>Voto computado com sucesso!</h1>
                     <br><br>
-                    <image src="./images/digi.png" style="height: 65%; margin-right: -3px;"></image>
+                    <image src="./images/logo_digitaly.png" style="max-height: 15vh; margin-right: -3px;"></image>
                 </div>
             </a>
-            `)
-        })
+            `);
+        // const name = $('#name').val();
+        // const mail = $('#email').val();
+        // if(name === "" || mail === "") {
+        //     alert("Preencha os campos");
+        //     return;
+        // }
+        // if(mail.trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+        //     alert("Email invalido");
+        //     return;
+        // }
+        // const body = {
+        //     formId: "1",
+        //     answer: {
+        //         name: name,
+        //         email: mail,
+        //         answers: [option],
+        //         date: new Date()
+        //     }
+        // }
+        // $.post("/db/form/answer", body)
+        // .done((response) => {
+        //     console.log(response);
+        //     $("#form").html(`
+        //     <a href="https://digitaly.tech" target="_blank" style="align-self: center;">
+        //         <div class="voto">
+        //             <h1>Voto computado com sucesso!</h1>
+        //             <br><br>
+        //             <image src="./images/digi.png" style="height: 65%; margin-right: -3px;"></image>
+        //         </div>
+        //     </a>
+        //     `)
+        // })
     }
     
 
