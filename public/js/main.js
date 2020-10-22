@@ -78,7 +78,7 @@
         ];
         let date = new Date();
         $("#data").html(`${date.getDate()} de ${meses[date.getMonth()]} de ${date.getFullYear()}`);
-        document.getElementById("monica").scrollIntoView();
+	document.getElementById("monica").scrollIntoView();
     });
 
     function submitForm(option) {
