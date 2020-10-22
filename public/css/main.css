@@ -46,7 +46,7 @@
   font-weight: 200;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.81;
+  line-height: 1.25;
   letter-spacing: normal;
   text-align: center;
   color: #3865b5;
@@ -513,11 +513,17 @@ textarea.input100 {
 @media (max-width: 768px) {
   .contact100-form {
     width: 100%;
-    height: 100vh;
+    max-height: 100vh;
     padding-bottom: 40px !important;
   }
   .form-container{
     height: 100%;
+  }
+  .Ol-sou-a-Monica {
+    font-size: 18px;
+  }
+  .seja-bem-vindoa-T {
+    font-size: 16px;
   }
   .labels {
     font-size: 14px;
@@ -539,7 +545,7 @@ textarea.input100 {
   }
   .contact100-more {
     width: 100%;
-    height: 100vh;
+    max-height: 100vh;
   }
 }
 
