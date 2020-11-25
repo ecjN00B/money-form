@@ -513,11 +513,17 @@ textarea.input100 {
 @media (max-width: 768px) {
   .contact100-form {
     width: 100%;
-    max-height: calc(100vh - 40px) !important;
+    min-height: calc(100vh + 40px) !important;
     padding-bottom: 40px !important;
   }
   .form-container{
     height: 100%;
+  }
+  .Ol-sou-a-Monica {
+    font-size: 20px;
+  }
+  .seja-bem-vindoa-T {
+    font-size: 18px;
   }
   .labels {
     font-size: 14px;
